@@ -1,777 +1,775 @@
 /*
-* mocking data
-* */
+ * mocking data
+ * */
 // 设备列表
 const _devices = {
-  "msg": "success",
-  "data": [{"id": 1420, "model": "iPhone7,2", "name": "\u82F9\u679C"}, {
-    "id": 1374,
-    "model": "HUAWEI:PE-UL00",
-    "name": "\u534E\u4E3A"
-  }, {"id": 1359, "model": "Xiaomi:Redmi Note 2", "name": "\u5C0F\u7C73"}, {
-    "id": 1337,
-    "model": ":OPPO R7sm",
-    "name": "OPPO"
-  }, {"id": 1322, "model": "iPhone7,1", "name": "\u82F9\u679C"}, {
-    "id": 1297,
-    "model": "iPhone7,2",
-    "name": "\u82F9\u679C"
-  }, {"id": 1282, "model": "iPhone7,1", "name": "\u82F9\u679C"}, {
-    "id": 1278,
-    "model": "Meizu:m1 metal",
-    "name": "\u9B45\u65CF"
-  }, {"id": 1254, "model": ":OPPO A37m", "name": "OPPO"}, {
-    "id": 1247,
-    "model": ":HUAWEI CRR-CL00",
-    "name": "\u534E\u4E3A"
-  }, {"id": 1243, "model": ":HUAWEI P7-L09", "name": "\u534E\u4E3A"}, {
-    "id": 1234,
-    "model": ":HUAWEI RIO-CL00",
-    "name": "\u534E\u4E3A"
-  }, {"id": 1202, "model": ":HUAWEI NXT-CL00", "name": "\u534E\u4E3A"}, {
-    "id": 1184,
-    "model": "SM-A5009",
-    "name": "\u4E09\u661F"
-  }, {"id": 1148, "model": "vivo X7", "name": "vivo"}, {
-    "id": 1145,
-    "model": "HUAWEI:KIW-TL00H",
-    "name": "\u534E\u4E3A"
-  }, {"id": 1142, "model": ":HUAWEI G730-L075", "name": "\u534E\u4E3A"}, {
-    "id": 1122,
-    "model": "H60-L01",
-    "name": "\u534E\u4E3A"
-  }, {"id": 1110, "model": "HUAWEI:PLK-TL00", "name": "\u534E\u4E3A"}, {
-    "id": 1092,
-    "model": "HUAWEI C199",
-    "name": "\u534E\u4E3A"
+  'msg': 'success',
+  'data': [{'id': 1420, 'model': 'iPhone7,2', 'name': '\u82F9\u679C'}, {
+    'id': 1374,
+    'model': 'HUAWEI:PE-UL00',
+    'name': '\u534E\u4E3A'
+  }, {'id': 1359, 'model': 'Xiaomi:Redmi Note 2', 'name': '\u5C0F\u7C73'}, {
+    'id': 1337,
+    'model': ':OPPO R7sm',
+    'name': 'OPPO'
+  }, {'id': 1322, 'model': 'iPhone7,1', 'name': '\u82F9\u679C'}, {
+    'id': 1297,
+    'model': 'iPhone7,2',
+    'name': '\u82F9\u679C'
+  }, {'id': 1282, 'model': 'iPhone7,1', 'name': '\u82F9\u679C'}, {
+    'id': 1278,
+    'model': 'Meizu:m1 metal',
+    'name': '\u9B45\u65CF'
+  }, {'id': 1254, 'model': ':OPPO A37m', 'name': 'OPPO'}, {
+    'id': 1247,
+    'model': ':HUAWEI CRR-CL00',
+    'name': '\u534E\u4E3A'
+  }, {'id': 1243, 'model': ':HUAWEI P7-L09', 'name': '\u534E\u4E3A'}, {
+    'id': 1234,
+    'model': ':HUAWEI RIO-CL00',
+    'name': '\u534E\u4E3A'
+  }, {'id': 1202, 'model': ':HUAWEI NXT-CL00', 'name': '\u534E\u4E3A'}, {
+    'id': 1184,
+    'model': 'SM-A5009',
+    'name': '\u4E09\u661F'
+  }, {'id': 1148, 'model': 'vivo X7', 'name': 'vivo'}, {
+    'id': 1145,
+    'model': 'HUAWEI:KIW-TL00H',
+    'name': '\u534E\u4E3A'
+  }, {'id': 1142, 'model': ':HUAWEI G730-L075', 'name': '\u534E\u4E3A'}, {
+    'id': 1122,
+    'model': 'H60-L01',
+    'name': '\u534E\u4E3A'
+  }, {'id': 1110, 'model': 'HUAWEI:PLK-TL00', 'name': '\u534E\u4E3A'}, {
+    'id': 1092,
+    'model': 'HUAWEI C199',
+    'name': '\u534E\u4E3A'
   }],
-  "size": 20
+  'size': 20
 };
-
 // 点击具体设备, 获取设备详情
 const _deviceInfo = {
-  "msg": "success",
-  "data": {
-    "age": "",
-    "alwaysCities": "杭州市,贵阳市,黔南布依族苗族自治州,宣城市,六盘水市,宁波市,巴中市,绍兴市",
-    "car": "",
-    "cityLoc": [
+  'msg': 'success',
+  'data': {
+    'age': '',
+    'alwaysCities': '杭州市,贵阳市,黔南布依族苗族自治州,宣城市,六盘水市,宁波市,巴中市,绍兴市',
+    'car': '',
+    'cityLoc': [
       {
-        "cnt": 5,
-        "lat": "120.219375",
-        "lng": "30.259244",
-        "name": "杭州市"
+        'cnt': 5,
+        'lat': '120.219375',
+        'lng': '30.259244',
+        'name': '杭州市'
       },
       {
-        "cnt": 3,
-        "lat": "106.709177",
-        "lng": "26.629907",
-        "name": "贵阳市"
+        'cnt': 3,
+        'lat': '106.709177',
+        'lng': '26.629907',
+        'name': '贵阳市'
       },
       {
-        "cnt": 2,
-        "lat": "107.523205",
-        "lng": "26.264536",
-        "name": "黔南布依族苗族自治州"
+        'cnt': 2,
+        'lat': '107.523205',
+        'lng': '26.264536',
+        'name': '黔南布依族苗族自治州'
       },
       {
-        "cnt": 1,
-        "lat": "106.757916",
-        "lng": "31.869189",
-        "name": "巴中市"
+        'cnt': 1,
+        'lat': '106.757916',
+        'lng': '31.869189',
+        'name': '巴中市'
       },
       {
-        "cnt": 1,
-        "lat": "104.852087",
-        "lng": "26.591866",
-        "name": "六盘水市"
+        'cnt': 1,
+        'lat': '104.852087',
+        'lng': '26.591866',
+        'name': '六盘水市'
       },
       {
-        "cnt": 1,
-        "lat": "121.579006",
-        "lng": "29.885259",
-        "name": "宁波市"
+        'cnt': 1,
+        'lat': '121.579006',
+        'lng': '29.885259',
+        'name': '宁波市'
       }
     ],
-    "comp": {
-      "lat": "120.18974",
-      "lng": "30.19524",
-      "name": "滨兴西苑西243米"
+    'comp': {
+      'lat': '120.18974',
+      'lng': '30.19524',
+      'name': '滨兴西苑西243米'
     },
-    "home": {
-      "lat": "120.21572",
-      "lng": "30.29397",
-      "name": "新和嘉苑"
+    'home': {
+      'lat': '120.21572',
+      'lng': '30.29397',
+      'name': '新和嘉苑'
     },
-    "id": 0,
-    "localCity": null,
-    "provinceLoc": [
+    'id': 0,
+    'localCity': null,
+    'provinceLoc': [
       {
-        "citys": [
+        'citys': [
           {
-            "cnt": 5,
-            "lat": "120.219375",
-            "lng": "30.259244",
-            "name": "杭州市"
+            'cnt': 5,
+            'lat': '120.219375',
+            'lng': '30.259244',
+            'name': '杭州市'
           },
           {
-            "cnt": 1,
-            "lat": "121.579006",
-            "lng": "29.885259",
-            "name": "宁波市"
+            'cnt': 1,
+            'lat': '121.579006',
+            'lng': '29.885259',
+            'name': '宁波市'
           }
         ],
-        "lat": "119.957202",
-        "lng": "29.159494",
-        "name": "浙江"
+        'lat': '119.957202',
+        'lng': '29.159494',
+        'name': '浙江'
       },
       {
-        "citys": [
+        'citys': [
           {
-            "cnt": 3,
-            "lat": "106.709177",
-            "lng": "26.629907",
-            "name": "贵阳市"
+            'cnt': 3,
+            'lat': '106.709177',
+            'lng': '26.629907',
+            'name': '贵阳市'
           },
           {
-            "cnt": 2,
-            "lat": "107.523205",
-            "lng": "26.264536",
-            "name": "黔南布依族苗族自治州"
+            'cnt': 2,
+            'lat': '107.523205',
+            'lng': '26.264536',
+            'name': '黔南布依族苗族自治州'
           },
           {
-            "cnt": 1,
-            "lat": "104.852087",
-            "lng": "26.591866",
-            "name": "六盘水市"
+            'cnt': 1,
+            'lat': '104.852087',
+            'lng': '26.591866',
+            'name': '六盘水市'
           }
         ],
-        "lat": "106.734996",
-        "lng": "26.902826",
-        "name": "贵州"
+        'lat': '106.734996',
+        'lng': '26.902826',
+        'name': '贵州'
       },
       {
-        "citys": [
+        'citys': [
           {
-            "cnt": 1,
-            "lat": "106.757916",
-            "lng": "31.869189",
-            "name": "巴中市"
+            'cnt': 1,
+            'lat': '106.757916',
+            'lng': '31.869189',
+            'name': '巴中市'
           }
         ],
-        "lat": "102.89916",
-        "lng": "30.367481",
-        "name": "四川"
+        'lat': '102.89916',
+        'lng': '30.367481',
+        'name': '四川'
       }
     ],
-    "sex": "",
-    "tags": {
-      "appinterest": [
+    'sex': '',
+    'tags': {
+      'appinterest': [
         {
-          "label": "02010101",
-          "name": "网上商城",
-          "weight": "2"
+          'label': '02010101',
+          'name': '网上商城',
+          'weight': '2'
         },
         {
-          "label": "02010102",
-          "name": "团购",
-          "weight": "1"
+          'label': '02010102',
+          'name': '团购',
+          'weight': '1'
         },
         {
-          "label": "02010103",
-          "name": "导购",
-          "weight": "1"
+          'label': '02010103',
+          'name': '导购',
+          'weight': '1'
         },
         {
-          "label": "02010104",
-          "name": "比价",
-          "weight": "1"
+          'label': '02010104',
+          'name': '比价',
+          'weight': '1'
         },
         {
-          "label": "02010106",
-          "name": "海淘",
-          "weight": "1"
+          'label': '02010106',
+          'name': '海淘',
+          'weight': '1'
         },
         {
-          "label": "02010202",
-          "name": "课外辅导",
-          "weight": "1"
+          'label': '02010202',
+          'name': '课外辅导',
+          'weight': '1'
         },
         {
-          "label": "02010206",
-          "name": "管理",
-          "weight": "1"
+          'label': '02010206',
+          'name': '管理',
+          'weight': '1'
         },
         {
-          "label": "02010209",
-          "name": "考试",
-          "weight": "1"
+          'label': '02010209',
+          'name': '考试',
+          'weight': '1'
         },
         {
-          "label": "02010406",
-          "name": "科技资讯",
-          "weight": "1"
+          'label': '02010406',
+          'name': '科技资讯',
+          'weight': '1'
         },
         {
-          "label": "02010501",
-          "name": "微博",
-          "weight": "1"
+          'label': '02010501',
+          'name': '微博',
+          'weight': '1'
         },
         {
-          "label": "02010503",
-          "name": "交友\\社区",
-          "weight": "1"
+          'label': '02010503',
+          'name': '交友\\社区',
+          'weight': '1'
         },
         {
-          "label": "02010601",
-          "name": "即时通讯",
-          "weight": "1"
+          'label': '02010601',
+          'name': '即时通讯',
+          'weight': '1'
         },
         {
-          "label": "02010702",
-          "name": "音乐",
-          "weight": "1"
+          'label': '02010702',
+          'name': '音乐',
+          'weight': '1'
         },
         {
-          "label": "02010703",
-          "name": "视频",
-          "weight": "2"
+          'label': '02010703',
+          'name': '视频',
+          'weight': '2'
         },
         {
-          "label": "02010801",
-          "name": "地图",
-          "weight": "1"
+          'label': '02010801',
+          'name': '地图',
+          'weight': '1'
         },
         {
-          "label": "02010802",
-          "name": "导航",
-          "weight": "1"
+          'label': '02010802',
+          'name': '导航',
+          'weight': '1'
         },
         {
-          "label": "02010804",
-          "name": "打车",
-          "weight": "2"
+          'label': '02010804',
+          'name': '打车',
+          'weight': '2'
         },
         {
-          "label": "02010805",
-          "name": "租车",
-          "weight": "1"
+          'label': '02010805',
+          'name': '租车',
+          'weight': '1'
         },
         {
-          "label": "02010806",
-          "name": "航班",
-          "weight": "2"
+          'label': '02010806',
+          'name': '航班',
+          'weight': '2'
         },
         {
-          "label": "02010807",
-          "name": "公交",
-          "weight": "1"
+          'label': '02010807',
+          'name': '公交',
+          'weight': '1'
         },
         {
-          "label": "02010808",
-          "name": "火车",
-          "weight": "1"
+          'label': '02010808',
+          'name': '火车',
+          'weight': '1'
         },
         {
-          "label": "02010809",
-          "name": "酒店应用",
-          "weight": "1"
+          'label': '02010809',
+          'name': '酒店应用',
+          'weight': '1'
         },
         {
-          "label": "02010810",
-          "name": "旅游资讯",
-          "weight": "1"
+          'label': '02010810',
+          'name': '旅游资讯',
+          'weight': '1'
         },
         {
-          "label": "02010811",
-          "name": "旅游产品",
-          "weight": "1"
+          'label': '02010811',
+          'name': '旅游产品',
+          'weight': '1'
         },
         {
-          "label": "02010812",
-          "name": "游记分享",
-          "weight": "1"
+          'label': '02010812',
+          'name': '游记分享',
+          'weight': '1'
         },
         {
-          "label": "02010813",
-          "name": "长途客车",
-          "weight": "1"
+          'label': '02010813',
+          'name': '长途客车',
+          'weight': '1'
         },
         {
-          "label": "02010902",
-          "name": "家电",
-          "weight": "1"
+          'label': '02010902',
+          'name': '家电',
+          'weight': '1'
         },
         {
-          "label": "02010905",
-          "name": "智能家居",
-          "weight": "1"
+          'label': '02010905',
+          'name': '智能家居',
+          'weight': '1'
         },
         {
-          "label": "02011002",
-          "name": "运动健身",
-          "weight": "1"
+          'label': '02011002',
+          'name': '运动健身',
+          'weight': '1'
         },
         {
-          "label": "02011103",
-          "name": "外卖订餐",
-          "weight": "2"
+          'label': '02011103',
+          'name': '外卖订餐',
+          'weight': '2'
         },
         {
-          "label": "02011111",
-          "name": "快递",
-          "weight": "1"
+          'label': '02011111',
+          'name': '快递',
+          'weight': '1'
         },
         {
-          "label": "02011114",
-          "name": "车主服务",
-          "weight": "1"
+          'label': '02011114',
+          'name': '车主服务',
+          'weight': '1'
         },
         {
-          "label": "02011115",
-          "name": "便民服务",
-          "weight": "2"
+          'label': '02011115',
+          'name': '便民服务',
+          'weight': '2'
         },
         {
-          "label": "02011119",
-          "name": "生活综合",
-          "weight": "1"
+          'label': '02011119',
+          'name': '生活综合',
+          'weight': '1'
         },
         {
-          "label": "02011201",
-          "name": "招聘求职",
-          "weight": "1"
+          'label': '02011201',
+          'name': '招聘求职',
+          'weight': '1'
         },
         {
-          "label": "02011208",
-          "name": "网盘",
-          "weight": "1"
+          'label': '02011208',
+          'name': '网盘',
+          'weight': '1'
         },
         {
-          "label": "02011308",
-          "name": "实用工具",
-          "weight": "1"
+          'label': '02011308',
+          'name': '实用工具',
+          'weight': '1'
         },
         {
-          "label": "02011401",
-          "name": "财富管理",
-          "weight": "1"
+          'label': '02011401',
+          'name': '财富管理',
+          'weight': '1'
         },
         {
-          "label": "02011403",
-          "name": "直销银行",
-          "weight": "2"
+          'label': '02011403',
+          'name': '直销银行',
+          'weight': '2'
         },
         {
-          "label": "02011405",
-          "name": "证券",
-          "weight": "1"
+          'label': '02011405',
+          'name': '证券',
+          'weight': '1'
         },
         {
-          "label": "02011411",
-          "name": "支付",
-          "weight": "1"
+          'label': '02011411',
+          'name': '支付',
+          'weight': '1'
         },
         {
-          "label": "02011413",
-          "name": "手机银行",
-          "weight": "2"
+          'label': '02011413',
+          'name': '手机银行',
+          'weight': '2'
         },
         {
-          "label": "02011501",
-          "name": "房屋咨询",
-          "weight": "1"
+          'label': '02011501',
+          'name': '房屋咨询',
+          'weight': '1'
         },
         {
-          "label": "02011502",
-          "name": "买房",
-          "weight": "1"
+          'label': '02011502',
+          'name': '买房',
+          'weight': '1'
         },
         {
-          "label": "02011504",
-          "name": "租房",
-          "weight": "1"
+          'label': '02011504',
+          'name': '租房',
+          'weight': '1'
         },
         {
-          "label": "02011801",
-          "name": "汽车资讯",
-          "weight": "1"
+          'label': '02011801',
+          'name': '汽车资讯',
+          'weight': '1'
         }
       ],
-      "consumption": [],
-      "demography": [],
-      "deviceinfo": [],
-      "gamedepth": [],
-      "gameinterest": [
+      'consumption': [],
+      'demography': [],
+      'deviceinfo': [],
+      'gamedepth': [],
+      'gameinterest': [
         {
-          "label": "01010801",
-          "name": "闯关",
-          "weight": "1"
+          'label': '01010801',
+          'name': '闯关',
+          'weight': '1'
         },
         {
-          "label": "01011102",
-          "name": "经营",
-          "weight": "1"
+          'label': '01011102',
+          'name': '经营',
+          'weight': '1'
         },
         {
-          "label": "01011201",
-          "name": "宠物养成类",
-          "weight": "1"
+          'label': '01011201',
+          'name': '宠物养成类',
+          'weight': '1'
         }
       ],
-      "industry": [],
+      'industry': [],
     }
   }
 };
 
-
-//市场洞察信息, 生成图表
+// 市场洞察信息, 生成图表
 const _marketInfo = {
-  "msg": "success",
-  "data": {
-    "cities": [
-      {"name": '深圳', "num": 41, "numPercent": "20%", 'location': [114.07, 22.62]},
-      {"name": '北京', "num": 79, "numPercent": "20%", 'location': [116.46, 39.92]},
-      {"name": '乌鲁木齐', "num": 84, "numPercent": "20%", 'location': [87.68, 43.77]},
-      {"name": '枣庄', "num": 84, "numPercent": "20%", 'location': [117.57, 34.86]},
-      {"name": '杭州', "num": 95, "numPercent": "20%", 'location': [120.19, 30.26]},
+  'msg': 'success',
+  'data': {
+    'cities': [
+      {'name': '深圳', 'num': 41, 'numPercent': '20%', 'location': [114.07, 22.62]},
+      {'name': '北京', 'num': 79, 'numPercent': '20%', 'location': [116.46, 39.92]},
+      {'name': '乌鲁木齐', 'num': 84, 'numPercent': '20%', 'location': [87.68, 43.77]},
+      {'name': '枣庄', 'num': 84, 'numPercent': '20%', 'location': [117.57, 34.86]},
+      {'name': '杭州', 'num': 95, 'numPercent': '20%', 'location': [120.19, 30.26]},
     ],
-    "ageInfor": [
+    'ageInfor': [
       {
-        "agePeriod": "19岁以下",
-        "num": 20
+        'agePeriod': '19岁以下',
+        'num': 20
       },
       {
-        "agePeriod": "19-25岁",
-        "num": 30
+        'agePeriod': '19-25岁',
+        'num': 30
       },
       {
-        "agePeriod": "26-35岁",
-        "num": 20
+        'agePeriod': '26-35岁',
+        'num': 20
       },
       {
-        "agePeriod": "36-45岁",
-        "num": 30
+        'agePeriod': '36-45岁',
+        'num': 30
       }
 
     ],
-    "interestsInfor": [
+    'interestsInfor': [
       {
-        "value": 80,
-        "name": "箱包",
-        "path": "箱包",
-        "children": [
+        'value': 80,
+        'name': '箱包',
+        'path': '箱包',
+        'children': [
           {
-            "value": 28,
-            "name": "女士皮包",
-            "path": "箱包/女士背包"
+            'value': 28,
+            'name': '女士皮包',
+            'path': '箱包/女士背包'
           },
           {
-            "value": 40,
-            "name": "女士钱包",
-            "path": "箱包/女士钱包"
+            'value': 40,
+            'name': '女士钱包',
+            'path': '箱包/女士钱包'
           },
           {
-            "value": 12,
-            "name": "女士单肩包",
-            "path": "箱包/女士单肩包"
+            'value': 12,
+            'name': '女士单肩包',
+            'path': '箱包/女士单肩包'
           }
         ]
       },
       {
-        "value": 92,
-        "name": "珠宝手表",
-        "path": "珠宝手表",
-        "children": [
+        'value': 92,
+        'name': '珠宝手表',
+        'path': '珠宝手表',
+        'children': [
           {
-            "value": 44,
-            "name": "项链",
-            "path": "珠宝手表/项链"
+            'value': 44,
+            'name': '项链',
+            'path': '珠宝手表/项链'
           },
           {
-            "value": 28,
-            "name": "手链",
-            "path": "珠宝手表/手链"
+            'value': 28,
+            'name': '手链',
+            'path': '珠宝手表/手链'
           },
           {
-            "value": 20,
-            "name": "戒指",
-            "path": "珠宝手表/戒指"
+            'value': 20,
+            'name': '戒指',
+            'path': '珠宝手表/戒指'
           }
         ]
       },
       {
-        "value": 304,
-        "name": "餐饮",
-        "path": "餐饮",
-        "children": [
+        'value': 304,
+        'name': '餐饮',
+        'path': '餐饮',
+        'children': [
           {
-            "value": 100,
-            "name": "中餐正餐",
-            "path": "餐饮/中餐正餐"
+            'value': 100,
+            'name': '中餐正餐',
+            'path': '餐饮/中餐正餐'
           },
           {
-            "value": 72,
-            "name": "西餐正餐",
-            "path": "餐饮/西餐正餐"
+            'value': 72,
+            'name': '西餐正餐',
+            'path': '餐饮/西餐正餐'
           },
           {
-            "value": 132,
-            "name": "自助餐",
-            "path": "餐饮/自助餐"
+            'value': 132,
+            'name': '自助餐',
+            'path': '餐饮/自助餐'
           }
         ]
       },
       {
-        "value": 36,
-        "name": "文化教育",
-        "path": "文化教育",
-        "children": [
+        'value': 36,
+        'name': '文化教育',
+        'path': '文化教育',
+        'children': [
           {
-            "value": 16,
-            "name": "图书",
-            "path": "文化教育/图书"
+            'value': 16,
+            'name': '图书',
+            'path': '文化教育/图书'
           },
           {
-            "value": 20,
-            "name": "音像资料",
-            "path": "文化教育/音像资料"
+            'value': 20,
+            'name': '音像资料',
+            'path': '文化教育/音像资料'
           }
         ]
       },
       {
-        "value": 70,
-        "name": "化妆品",
-        "path": "化妆品",
-        "children": [
+        'value': 70,
+        'name': '化妆品',
+        'path': '化妆品',
+        'children': [
           {
-            "value": 16,
-            "name": "爽肤水",
-            "path": "化妆品/爽肤水"
+            'value': 16,
+            'name': '爽肤水',
+            'path': '化妆品/爽肤水'
           },
           {
-            "value": 22,
-            "name": "乳液",
-            "path": "化妆品/乳液"
+            'value': 22,
+            'name': '乳液',
+            'path': '化妆品/乳液'
           },
           {
-            "value": 12,
-            "name": "BB霜",
-            "path": "化妆品/BB霜"
+            'value': 12,
+            'name': 'BB霜',
+            'path': '化妆品/BB霜'
           },
           {
-            "value": 20,
-            "name": "防晒霜",
-            "path": "化妆品/防晒霜"
+            'value': 20,
+            'name': '防晒霜',
+            'path': '化妆品/防晒霜'
           }
         ]
       }
     ],
-    "appsInfor": [
+    'appsInfor': [
       {
-        "value": 80,
-        "name": "网购",
-        "path": "网购",
-        "children": [
+        'value': 80,
+        'name': '网购',
+        'path': '网购',
+        'children': [
           {
-            "value": 28,
-            "name": "淘宝网",
-            "path": "网购/淘宝网"
+            'value': 28,
+            'name': '淘宝网',
+            'path': '网购/淘宝网'
           },
           {
-            "value": 40,
-            "name": "京东商城",
-            "path": "网购/京东商城"
+            'value': 40,
+            'name': '京东商城',
+            'path': '网购/京东商城'
           },
           {
-            "value": 12,
-            "name": "唯品秀",
-            "path": "网购/唯品秀"
+            'value': 12,
+            'name': '唯品秀',
+            'path': '网购/唯品秀'
           }
         ]
       },
       {
-        "value": 92,
-        "name": "阅读",
-        "path": "阅读",
-        "children": [
+        'value': 92,
+        'name': '阅读',
+        'path': '阅读',
+        'children': [
           {
-            "value": 44,
-            "name": "豆瓣",
-            "path": "阅读/豆瓣"
+            'value': 44,
+            'name': '豆瓣',
+            'path': '阅读/豆瓣'
           },
           {
-            "value": 28,
-            "name": "网易新闻",
-            "path": "阅读/网易新闻"
+            'value': 28,
+            'name': '网易新闻',
+            'path': '阅读/网易新闻'
           },
           {
-            "value": 20,
-            "name": "百度",
-            "path": "阅读/百度"
+            'value': 20,
+            'name': '百度',
+            'path': '阅读/百度'
           }
         ]
       },
       {
-        "value": 304,
-        "name": "社交",
-        "path": "社交",
-        "children": [
+        'value': 304,
+        'name': '社交',
+        'path': '社交',
+        'children': [
           {
-            "value": 100,
-            "name": "Wechat",
-            "path": "社交/Wechat"
+            'value': 100,
+            'name': 'Wechat',
+            'path': '社交/Wechat'
           },
           {
-            "value": 72,
-            "name": "微博",
-            "path": "社交/微博"
+            'value': 72,
+            'name': '微博',
+            'path': '社交/微博'
           },
           {
-            "value": 132,
-            "name": "QQ",
-            "path": "社交/QQ"
+            'value': 132,
+            'name': 'QQ',
+            'path': '社交/QQ'
           }
         ]
       },
       {
-        "value": 36,
-        "name": "教育",
-        "path": "教育",
-        "children": [
+        'value': 36,
+        'name': '教育',
+        'path': '教育',
+        'children': [
           {
-            "value": 16,
-            "name": "有道词典",
-            "path": "教育/有道词典"
+            'value': 16,
+            'name': '有道词典',
+            'path': '教育/有道词典'
           },
           {
-            "value": 20,
-            "name": "音像资料",
-            "path": "文化教育/音像资料"
+            'value': 20,
+            'name': '音像资料',
+            'path': '文化教育/音像资料'
           }
         ]
       },
       {
-        "value": 38,
-        "name": "咨询",
-        "path": "咨询",
-        "children": [
+        'value': 38,
+        'name': '咨询',
+        'path': '咨询',
+        'children': [
           {
-            "value": 16,
-            "name": "领英",
-            "path": "咨询/领英"
+            'value': 16,
+            'name': '领英',
+            'path': '咨询/领英'
           },
           {
-            "value": 22,
-            "name": "在线学习",
-            "path": "咨询/在线学习"
+            'value': 22,
+            'name': '在线学习',
+            'path': '咨询/在线学习'
           }
         ]
       }
     ],
-    "frequentLocationInfor": [
+    'frequentLocationInfor': [
       {
-        "value": 80,
-        "name": "科教文化",
-        "path": "科教文化",
-        "children": [
+        'value': 80,
+        'name': '科教文化',
+        'path': '科教文化',
+        'children': [
           {
-            "value": 28,
-            "name": "博物馆",
-            "path": "科教文化/博物馆"
+            'value': 28,
+            'name': '博物馆',
+            'path': '科教文化/博物馆'
           },
           {
-            "value": 40,
-            "name": "图书馆",
-            "path": "科教文化/图书馆"
+            'value': 40,
+            'name': '图书馆',
+            'path': '科教文化/图书馆'
           },
           {
-            "value": 12,
-            "name": "科技馆",
-            "path": "科教文化/科技馆"
+            'value': 12,
+            'name': '科技馆',
+            'path': '科教文化/科技馆'
           }
         ]
       },
       {
-        "value": 72,
-        "name": "旅游景区",
-        "path": "旅游景区",
-        "children": [
+        'value': 72,
+        'name': '旅游景区',
+        'path': '旅游景区',
+        'children': [
           {
-            "value": 44,
-            "name": "西湖",
-            "path": "旅游景区/西湖"
+            'value': 44,
+            'name': '西湖',
+            'path': '旅游景区/西湖'
           },
           {
-            "value": 28,
-            "name": "宋城",
-            "path": "旅游景区/宋城"
+            'value': 28,
+            'name': '宋城',
+            'path': '旅游景区/宋城'
           }
         ]
       },
       {
-        "value": 304,
-        "name": "交通枢纽",
-        "path": "交通枢纽",
-        "children": [
+        'value': 304,
+        'name': '交通枢纽',
+        'path': '交通枢纽',
+        'children': [
           {
-            "value": 100,
-            "name": "高铁站",
-            "path": "交通枢纽/高铁站"
+            'value': 100,
+            'name': '高铁站',
+            'path': '交通枢纽/高铁站'
           },
           {
-            "value": 72,
-            "name": "地铁站",
-            "path": "交通枢纽/地铁"
+            'value': 72,
+            'name': '地铁站',
+            'path': '交通枢纽/地铁'
           },
           {
-            "value": 132,
-            "name": "公交站",
-            "path": "交通枢纽/公交站"
+            'value': 132,
+            'name': '公交站',
+            'path': '交通枢纽/公交站'
           }
         ]
       },
       {
-        "value": 36,
-        "name": "医院",
-        "path": "医院",
-        "children": [
+        'value': 36,
+        'name': '医院',
+        'path': '医院',
+        'children': [
           {
-            "value": 16,
-            "name": "浙一",
-            "path": "医院/浙一"
+            'value': 16,
+            'name': '浙一',
+            'path': '医院/浙一'
           },
           {
-            "value": 20,
-            "name": "浙二",
-            "path": "医院/浙二"
+            'value': 20,
+            'name': '浙二',
+            'path': '医院/浙二'
           }
         ]
       },
       {
-        "value": 70,
-        "name": "高端场所",
-        "path": "高端场所",
-        "children": [
+        'value': 70,
+        'name': '高端场所',
+        'path': '高端场所',
+        'children': [
           {
-            "value": 16,
-            "name": "SPA",
-            "path": "高端场所/SPA"
+            'value': 16,
+            'name': 'SPA',
+            'path': '高端场所/SPA'
           },
           {
-            "value": 22,
-            "name": "银泰",
-            "path": "高端场所/银泰"
+            'value': 22,
+            'name': '银泰',
+            'path': '高端场所/银泰'
           },
           {
-            "value": 12,
-            "name": "BB霜",
-            "path": "高端场所/BB霜"
+            'value': 12,
+            'name': 'BB霜',
+            'path': '高端场所/BB霜'
           },
           {
-            "value": 20,
-            "name": "防晒霜",
-            "path": "高端场所/防晒霜"
+            'value': 20,
+            'name': '防晒霜',
+            'path': '高端场所/防晒霜'
           }
         ]
       }
