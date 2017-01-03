@@ -5,14 +5,26 @@
 ------------------>
 <template>
   <div class="sideBar">
-
-    <div class="header"></div>
-    <div class="deviceInfo"></div>
-    <div class="sideBg"></div>
+    <div class="header">
+      <input type="text" value="IPHONE7 MNFT">
+    </div>
+    <devicelist></devicelist>
   </div>
 </template>
 <script type="text/ecmascript-6">
-  export default {}
+  import devicelist from '../deivcelist/devicelist.vue'
+
+  export default {
+    data () {
+      return {
+
+      }
+    },
+    components: {
+      devicelist
+    }
+
+  }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
@@ -23,6 +35,30 @@
     top 0
     width 440px
     height 100%
+    background-image url('imgs/side-bg.png')
+    background-position left top
+    background-repeat no-repeat
+    background-color rgba(7, 19, 22 ,.4)
+    .header
+      box-sizing border-box
+      width 380px
+      height 91px
+      line-height 91px
+      margin 20px 0 25px 45px
+      padding 0 85px 0 40px
+      background url('imgs/device-search.png') -8px -3px no-repeat
+      input
+        background transparent
+        width 250px
+        height 91px
+        margin none
+        padding none
+        line-height 91px
+        font-size 38px
+        color rgb(188,250,255)
+        font-weight 300
+        border none
+        outline none
 
 </style>
 
