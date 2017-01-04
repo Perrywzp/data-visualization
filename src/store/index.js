@@ -10,6 +10,7 @@ export default new Vuex.Store({
   mutations,
   actions,
   getters: {
-    todos: state => state.todos
+    // todos: state => state.todos
+    device: state => state.device
   }
 });

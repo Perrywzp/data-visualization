@@ -2,7 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 
-import './common/stylus/libs/perfect-scroll-theme-blue.css';
+// import './common/stylus/libs/perfect-scroll-theme-blue.css';
+import 'node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.css';
 import './common/icons/iconfont/iconfont.css';
 import './common/stylus/index.styl';
 

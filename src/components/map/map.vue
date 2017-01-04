@@ -14,8 +14,13 @@
         locations: []
       }
     },
+    computed () {
+
+    },
     methods: {
-      showInfo () {}
+      showInfo () {
+
+      }
     },
     mounted () {
       /* eslint-disable no-new */

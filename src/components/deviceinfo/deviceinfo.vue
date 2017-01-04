@@ -560,7 +560,7 @@
                   display inline-block
                   width 45px
                   height 55px
-                  background url('imgs/app_default.png') 0 0 no-repeat
+                  /* background url('imgs/app_default.png') 0 0 no-repeat */
             .app-name
               text-align center
               font-size 18px
