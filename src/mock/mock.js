@@ -164,262 +164,290 @@ const _deviceInfo = {
       }
     ],
     'sex': '',
-    'tags': {
-      'appinterest': [
-        {
-          'label': '02010101',
-          'name': '网上商城',
-          'weight': '2'
-        },
-        {
-          'label': '02010102',
-          'name': '团购',
-          'weight': '1'
-        },
-        {
-          'label': '02010103',
-          'name': '导购',
-          'weight': '1'
-        },
-        {
-          'label': '02010104',
-          'name': '比价',
-          'weight': '1'
-        },
-        {
-          'label': '02010106',
-          'name': '海淘',
-          'weight': '1'
-        },
-        {
-          'label': '02010202',
-          'name': '课外辅导',
-          'weight': '1'
-        },
-        {
-          'label': '02010206',
-          'name': '管理',
-          'weight': '1'
-        },
-        {
-          'label': '02010209',
-          'name': '考试',
-          'weight': '1'
-        },
-        {
-          'label': '02010406',
-          'name': '科技资讯',
-          'weight': '1'
-        },
-        {
-          'label': '02010501',
-          'name': '微博',
-          'weight': '1'
-        },
-        {
-          'label': '02010503',
-          'name': '交友\\社区',
-          'weight': '1'
-        },
-        {
-          'label': '02010601',
-          'name': '即时通讯',
-          'weight': '1'
-        },
-        {
-          'label': '02010702',
-          'name': '音乐',
-          'weight': '1'
-        },
-        {
-          'label': '02010703',
-          'name': '视频',
-          'weight': '2'
-        },
-        {
-          'label': '02010801',
-          'name': '地图',
-          'weight': '1'
-        },
-        {
-          'label': '02010802',
-          'name': '导航',
-          'weight': '1'
-        },
-        {
-          'label': '02010804',
-          'name': '打车',
-          'weight': '2'
-        },
-        {
-          'label': '02010805',
-          'name': '租车',
-          'weight': '1'
-        },
-        {
-          'label': '02010806',
-          'name': '航班',
-          'weight': '2'
-        },
-        {
-          'label': '02010807',
-          'name': '公交',
-          'weight': '1'
-        },
-        {
-          'label': '02010808',
-          'name': '火车',
-          'weight': '1'
-        },
-        {
-          'label': '02010809',
-          'name': '酒店应用',
-          'weight': '1'
-        },
-        {
-          'label': '02010810',
-          'name': '旅游资讯',
-          'weight': '1'
-        },
-        {
-          'label': '02010811',
-          'name': '旅游产品',
-          'weight': '1'
-        },
-        {
-          'label': '02010812',
-          'name': '游记分享',
-          'weight': '1'
-        },
-        {
-          'label': '02010813',
-          'name': '长途客车',
-          'weight': '1'
-        },
-        {
-          'label': '02010902',
-          'name': '家电',
-          'weight': '1'
-        },
-        {
-          'label': '02010905',
-          'name': '智能家居',
-          'weight': '1'
-        },
-        {
-          'label': '02011002',
-          'name': '运动健身',
-          'weight': '1'
-        },
-        {
-          'label': '02011103',
-          'name': '外卖订餐',
-          'weight': '2'
-        },
-        {
-          'label': '02011111',
-          'name': '快递',
-          'weight': '1'
-        },
-        {
-          'label': '02011114',
-          'name': '车主服务',
-          'weight': '1'
-        },
-        {
-          'label': '02011115',
-          'name': '便民服务',
-          'weight': '2'
-        },
-        {
-          'label': '02011119',
-          'name': '生活综合',
-          'weight': '1'
-        },
-        {
-          'label': '02011201',
-          'name': '招聘求职',
-          'weight': '1'
-        },
-        {
-          'label': '02011208',
-          'name': '网盘',
-          'weight': '1'
-        },
-        {
-          'label': '02011308',
-          'name': '实用工具',
-          'weight': '1'
-        },
-        {
-          'label': '02011401',
-          'name': '财富管理',
-          'weight': '1'
-        },
-        {
-          'label': '02011403',
-          'name': '直销银行',
-          'weight': '2'
-        },
-        {
-          'label': '02011405',
-          'name': '证券',
-          'weight': '1'
-        },
-        {
-          'label': '02011411',
-          'name': '支付',
-          'weight': '1'
-        },
-        {
-          'label': '02011413',
-          'name': '手机银行',
-          'weight': '2'
-        },
-        {
-          'label': '02011501',
-          'name': '房屋咨询',
-          'weight': '1'
-        },
-        {
-          'label': '02011502',
-          'name': '买房',
-          'weight': '1'
-        },
-        {
-          'label': '02011504',
-          'name': '租房',
-          'weight': '1'
-        },
-        {
-          'label': '02011801',
-          'name': '汽车资讯',
-          'weight': '1'
-        }
-      ],
-      'consumption': [],
-      'demography': [],
-      'deviceinfo': [],
-      'gamedepth': [],
-      'gameinterest': [
-        {
-          'label': '01010801',
-          'name': '闯关',
-          'weight': '1'
-        },
-        {
-          'label': '01011102',
-          'name': '经营',
-          'weight': '1'
-        },
-        {
-          'label': '01011201',
-          'name': '宠物养成类',
-          'weight': '1'
-        }
-      ],
-      'industry': [],
-    }
+    'tags': [
+      {
+        'name': '应用类',
+        'type': 'appinterest',
+        'list': [
+          {
+            'label': '02010101',
+            'name': '网上商城',
+            'weight': '2'
+          },
+          {
+            'label': '02010102',
+            'name': '团购',
+            'weight': '1'
+          },
+          {
+            'label': '02010103',
+            'name': '导购',
+            'weight': '1'
+          },
+          {
+            'label': '02010104',
+            'name': '比价',
+            'weight': '1'
+          },
+          {
+            'label': '02010106',
+            'name': '海淘',
+            'weight': '1'
+          },
+          {
+            'label': '02010202',
+            'name': '课外辅导',
+            'weight': '1'
+          },
+          {
+            'label': '02010206',
+            'name': '管理',
+            'weight': '1'
+          },
+          {
+            'label': '02010209',
+            'name': '考试',
+            'weight': '1'
+          },
+          {
+            'label': '02010406',
+            'name': '科技资讯',
+            'weight': '1'
+          },
+          {
+            'label': '02010501',
+            'name': '微博',
+            'weight': '1'
+          },
+          {
+            'label': '02010503',
+            'name': '交友\\社区',
+            'weight': '1'
+          },
+          {
+            'label': '02010601',
+            'name': '即时通讯',
+            'weight': '1'
+          },
+          {
+            'label': '02010702',
+            'name': '音乐',
+            'weight': '1'
+          },
+          {
+            'label': '02010703',
+            'name': '视频',
+            'weight': '2'
+          },
+          {
+            'label': '02010801',
+            'name': '地图',
+            'weight': '1'
+          },
+          {
+            'label': '02010802',
+            'name': '导航',
+            'weight': '1'
+          },
+          {
+            'label': '02010804',
+            'name': '打车',
+            'weight': '2'
+          },
+          {
+            'label': '02010805',
+            'name': '租车',
+            'weight': '1'
+          },
+          {
+            'label': '02010806',
+            'name': '航班',
+            'weight': '2'
+          },
+          {
+            'label': '02010807',
+            'name': '公交',
+            'weight': '1'
+          },
+          {
+            'label': '02010808',
+            'name': '火车',
+            'weight': '1'
+          },
+          {
+            'label': '02010809',
+            'name': '酒店应用',
+            'weight': '1'
+          },
+          {
+            'label': '02010810',
+            'name': '旅游资讯',
+            'weight': '1'
+          },
+          {
+            'label': '02010811',
+            'name': '旅游产品',
+            'weight': '1'
+          },
+          {
+            'label': '02010812',
+            'name': '游记分享',
+            'weight': '1'
+          },
+          {
+            'label': '02010813',
+            'name': '长途客车',
+            'weight': '1'
+          },
+          {
+            'label': '02010902',
+            'name': '家电',
+            'weight': '1'
+          },
+          {
+            'label': '02010905',
+            'name': '智能家居',
+            'weight': '1'
+          },
+          {
+            'label': '02011002',
+            'name': '运动健身',
+            'weight': '1'
+          },
+          {
+            'label': '02011103',
+            'name': '外卖订餐',
+            'weight': '2'
+          },
+          {
+            'label': '02011111',
+            'name': '快递',
+            'weight': '1'
+          },
+          {
+            'label': '02011114',
+            'name': '车主服务',
+            'weight': '1'
+          },
+          {
+            'label': '02011115',
+            'name': '便民服务',
+            'weight': '2'
+          },
+          {
+            'label': '02011119',
+            'name': '生活综合',
+            'weight': '1'
+          },
+          {
+            'label': '02011201',
+            'name': '招聘求职',
+            'weight': '1'
+          },
+          {
+            'label': '02011208',
+            'name': '网盘',
+            'weight': '1'
+          },
+          {
+            'label': '02011308',
+            'name': '实用工具',
+            'weight': '1'
+          },
+          {
+            'label': '02011401',
+            'name': '财富管理',
+            'weight': '1'
+          },
+          {
+            'label': '02011403',
+            'name': '直销银行',
+            'weight': '2'
+          },
+          {
+            'label': '02011405',
+            'name': '证券',
+            'weight': '1'
+          },
+          {
+            'label': '02011411',
+            'name': '支付',
+            'weight': '1'
+          },
+          {
+            'label': '02011413',
+            'name': '手机银行',
+            'weight': '2'
+          },
+          {
+            'label': '02011501',
+            'name': '房屋咨询',
+            'weight': '1'
+          },
+          {
+            'label': '02011502',
+            'name': '买房',
+            'weight': '1'
+          },
+          {
+            'label': '02011504',
+            'name': '租房',
+            'weight': '1'
+          },
+          {
+            'label': '02011801',
+            'name': '汽车资讯',
+            'weight': '1'
+          }
+        ]
+      },
+      {
+        'name': '消耗',
+        'type': 'consumption',
+        'list': []
+      },
+      {
+        'name': '人口统计',
+        'type': 'demography',
+        'list': []
+      },
+      {
+        'name': '设备信息',
+        'type': 'deviceinfo',
+        'list': []
+      },
+      {
+        'name': '游戏',
+        'type': 'gamedepth',
+        'list': []
+      },
+      {
+        'name': '游戏',
+        'type': 'gameinterest',
+        'list': [
+          {
+            'label': '01010801',
+            'name': '闯关',
+            'weight': '1'
+          },
+          {
+            'label': '01011102',
+            'name': '经营',
+            'weight': '1'
+          },
+          {
+            'label': '01011201',
+            'name': '宠物养成类',
+            'weight': '1'
+          }
+        ]
+      },
+      {
+        'name': '产业',
+        'type': 'industry',
+        'list': []
+      }
+    ]
   }
 };
 

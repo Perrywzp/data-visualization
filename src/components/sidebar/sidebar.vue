@@ -8,13 +8,11 @@
     <div class="header">
       <input type="text" :value="searchValue">
     </div>
-    <devicelist v-show="false" :devices="devices" ref="this"></devicelist>
-    <device-info :device="device"></device-info>
+    <devicelist :devices="devices" ref="this"></devicelist>
   </div>
 </template>
 <script type="text/ecmascript-6">
   import devicelist from '../deivcelist/devicelist.vue';
-  import deviceInfo from '../deviceinfo/deviceinfo.vue';
   import mock from '../../mock/mock';
   import _ from 'lodash';
 
@@ -39,8 +37,7 @@
       });
     },
     components: {
-      devicelist,
-      'device-info': deviceInfo
+      devicelist
     }
   }
 </script>

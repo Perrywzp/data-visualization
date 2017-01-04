@@ -4,16 +4,28 @@
 ** date 16/12/31
 -->
 <template>
-  <div class="devicelist-content blue-ps">
-    <ul class="devicelist" ref="devicelist">
-      <li @click="showDevice" v-for="(device, index) in devices" :key="device.id">{{index+1}}. {{ device.name }}</li>
-    </ul>
+  <div class="device-box" ref="devicebox">
+    <div v-show="listShow" class="devicelist-content blue-ps">
+      <ul class="devicelist" ref="devicelist">
+        <li @click="showDevice(device, $event)" v-for="(device, index) in devices" :key="device.id">{{index+1}}. {{ device.name }}</li>
+      </ul>
+    </div>
+    <device-info :deviceData="selectedDevice" ref="deviceInfo"></device-info>
   </div>
 </template>
 <script type="text/ecmascript-6">
-  import Ps from 'perfect-scrollbar';
+  import deviceinfo from '../deviceinfo/deviceinfo.vue'
+  import mock from '../../mock/mock'
+  import Ps from 'perfect-scrollbar'
 
   export default {
+    data () {
+      return {
+        selectedDevice: {},
+        listShow: true
+      }
+    },
+
     props: {
       devices: {
         type: Array,
@@ -32,20 +44,38 @@
       Ps.update(this.$refs.devicelist);
     },
     methods: {
-      showDevice () {
+      showDevice (device, $event) {
+        var that = this;
+        mock.getDeviceInfo((data) => {
+          that.selectedDevice = data.data;
+          that.listShow = false;
+          that.$refs.deviceInfo.show();
+        })
+      },
 
+      initScroll () {
+        Ps.initialize(this.$refs.devicebox, {theme: 'blue'});
       }
+    },
+    components: {
+      'device-info': deviceinfo
     }
   }
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../../common/stylus/interpolation.styl"
+  .device-box
+    position fixed
+    left 45px
+    top 130px
+    bottom 10px
+    width 388px
 
   .devicelist-content
     box-sizing border-box
     width 360px
     height 380px
-    margin 0 0 0 50px
+    margin-left 8px
     padding 15px 35px 30px 20px
     background url('imgs/devicelist.png') 2px 0 no-repeat
 

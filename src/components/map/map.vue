@@ -8,6 +8,15 @@
 </template>
 <script type="text/ecmascript-6">
   export default {
+
+    data () {
+      return {
+        locations: []
+      }
+    },
+    methods: {
+      showInfo () {}
+    },
     mounted () {
       /* eslint-disable no-new */
       /* eslint-disable no-undef */
