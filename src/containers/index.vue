@@ -8,6 +8,7 @@
 <script type="text/ecmascript-6">
   import sidebar from '../components/sidebar/sidebar';
   import amap from '../components/amap/amap';
+
   export default {
     name: 'index',
     data () {

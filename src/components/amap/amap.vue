@@ -5,12 +5,15 @@
 ------------------>
 <template>
   <div class="map-container">
-    <el-amap :vid="vid" :zoom="zoom" :center="center">
-      <el-amap-marker v-for="marker in markers" :position="marker.position" :events="marker.events" :visible="marker.visible" :draggable="marker.draggable"></el-amap-marker>
+    <el-amap :mapStyle="mapStyle" :vid="vid" :zoom="zoom" :center="center">
+      <el-amap-marker v-for="marker in markers" :position="marker.position" :events="marker.events"
+                      :visible="marker.visible" :draggable="marker.draggable"></el-amap-marker>
     </el-amap>
   </div>
 </template>
 <script type="text/ecmascript-6">
+  import { lazyAMapApiLoaderInstance } from 'vue-amap';
+  // let AMap = AMapAPILoader._window.AMap;
   export default {
     name: 'amap',
     data () {
@@ -18,27 +21,28 @@
         vid: 'amap',
         zoom: 5,
         center: [98.92548, 32.928166],
+        mapStyle: 'dark',
         /* markers: [
-          {
-            position: [120.228592, 30.196997],
-            events: {
-              click: () => {
-                /!* eslint-disable no-undef *!/
-                alert('click marker');
-                console.log(this);
-              },
-              dragend: (e) => {
-                console.log(e);
-                this.markers[0].position = [e.lnglat.lng, e.lnglat.lat];
-              }
-            },
-            visible: true,
-            draggable: false
-          }
-        ] */
+         {
+         position: [120.228592, 30.196997],
+         events: {
+         click: () => {
+         /!* eslint-disable no-undef *!/
+         alert('click marker');
+         console.log(this);
+         },
+         dragend: (e) => {
+         console.log(e);
+         this.markers[0].position = [e.lnglat.lng, e.lnglat.lat];
+         }
+         },
+         visible: true,
+         draggable: false
+         }
+         ] */
       };
     },
-    mehtods: {
+    methods: {
       makeMarkers () {
 
       }
@@ -47,24 +51,20 @@
       markers () {
         let markers = [];
         let device = this.$store.state.device;
+        console.log(lazyAMapApiLoaderInstance.scriptLoad)
+
         device.cityLoc.forEach((item) => {
           markers.push({
             position: [item.lng, item.lat],
             events: {
-              click: () => {
-                /* eslint-disable no-undef */
-                alert('click marker');
-                console.log(this);
-              },
+              click: () => {},
               dragend: (e) => {
                 console.log(e);
                 this.markers[0].position = [e.lnglat.lng, e.lnglat.lat];
               }
             },
-            /* eslint-disable no-undef */
             icon: new AMap.Icon({
               image: 'http://localhost:8080/static/imgs/amap/arrived.png',
-              /* eslint-disable no-undef */
               size: new AMap.Size(24, 24)
             }),
             visible: true,
