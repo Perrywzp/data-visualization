@@ -47,13 +47,6 @@
       markers () {
         let markers = [];
         let device = this.$store.state.device;
-        /* eslint-disable no-undef */
-        var icon = new AMap.Icon({
-          image: 'http://localhost:8080/static/imgs/amap/arrived.png',
-          /* eslint-disable no-undef */
-          size: new AMap.Size(24, 24)
-        });
-        console.log(device);
         device.cityLoc.forEach((item) => {
           markers.push({
             position: [item.lng, item.lat],
@@ -68,7 +61,12 @@
                 this.markers[0].position = [e.lnglat.lng, e.lnglat.lat];
               }
             },
-            icon: icon,
+            /* eslint-disable no-undef */
+            icon: new AMap.Icon({
+              image: 'http://localhost:8080/static/imgs/amap/arrived.png',
+              /* eslint-disable no-undef */
+              size: new AMap.Size(24, 24)
+            }),
             visible: true,
             draggable: false
           });
