@@ -1,22 +1,21 @@
 <template>
   <div class="index" id="index">
+    <amap></amap>
     <sidebar></sidebar>
-    <v-map></v-map>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-  import map from '../components/map/map';
   import sidebar from '../components/sidebar/sidebar';
-
+  import amap from '../components/amap/amap';
   export default {
     name: 'index',
     data () {
       return {};
     },
     components: {
-      'v-map': map,
-      sidebar
+      sidebar,
+      amap
     }
   };
 </script>

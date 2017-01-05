@@ -17,6 +17,7 @@
   import deviceinfo from '../deviceinfo/deviceinfo.vue'
   import mock from '../../mock/mock'
   import Ps from 'perfect-scrollbar'
+  import { mapActions } from 'vuex'
 
   export default {
     data () {
@@ -48,6 +49,7 @@
         var that = this;
         mock.getDeviceInfo((data) => {
           that.selectedDevice = data.data;
+          that.updateDevice(data.data);
           that.listShow = false;
           that.$refs.deviceInfo.show();
         })
@@ -55,7 +57,9 @@
 
       initScroll () {
         Ps.initialize(this.$refs.devicebox, {theme: 'blue'});
-      }
+      },
+
+      ...mapActions(['updateDevice'])
     },
     components: {
       'device-info': deviceinfo

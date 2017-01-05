@@ -9,8 +9,15 @@ import './common/stylus/index.styl';
 
 import Index from './containers/index.vue';
 import store from './store/index';
+import AMap from 'vue-amap';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
+Vue.use(AMap);
+
+AMap.initAMapApiLoader({
+  key: 'map',
+  plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor']
+});
 
 const router = new VueRouter({
   mode: 'history',

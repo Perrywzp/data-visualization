@@ -21,7 +21,8 @@
     "stylus-loader": "^2.4.0",
     "ellipsis.js": "^0.0.4",
     "perfect-scrollbar": "^0.6.15",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "vue-amap":"^0.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
