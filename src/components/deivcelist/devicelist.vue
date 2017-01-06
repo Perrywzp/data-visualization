@@ -54,7 +54,9 @@
           that.$refs.deviceInfo.show();
         })
       },
-
+      showList () {
+        this.listShow = true;
+      },
       initScroll () {
         Ps.initialize(this.$refs.devicebox, {theme: 'blue'});
       },

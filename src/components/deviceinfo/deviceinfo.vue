@@ -5,6 +5,9 @@
 ------------------>
 <template>
   <div v-if="device" v-show="showFlag" class="device-info" ref="deviceinfo">
+    <div class="go-back" @click = "goBack">
+      <i class="iconfont icon-fanhui"></i>
+    </div>
     <div class="base-info-content">
       <div class="base-info" ref="baseinfo">
         <p>性别：{{deviceData.sex || '未知'}}</p>
@@ -457,6 +460,11 @@
 
       location (posinfo, $event) {
         console.log(posinfo);
+      },
+
+      goBack () {
+        this.showFlag = false;
+        this.$parent.showList();
       }
     }
   }
@@ -465,6 +473,15 @@
   .device-info
     position relative
     width 380px
+    .go-back
+      position absolute
+      right 40px
+      top 20px
+      color rgb(197, 250, 254)
+      cursor pointer
+      z-index 100
+      .iconfont
+        font-size 35px
     .base-info-content
       box-sizing border-box
       width 360px
